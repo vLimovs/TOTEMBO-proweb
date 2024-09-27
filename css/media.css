@@ -73,16 +73,3 @@
         margin-right: 15px;
     }
 }
-
-
-
-/* //////// */
-@media (max-width: 546px) {
-    body * {
-        display: none;
-    }
-
-    .screen-warning {
-        display: block;
-    }
-}
