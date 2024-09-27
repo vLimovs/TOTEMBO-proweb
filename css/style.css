@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.screen-warning {
+    display: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+span, img, h1, h2, h3, p, li, a {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1326px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.header__nav {
+    margin-top: 50px;
+}
+
+.header__nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px #323232 solid;
+    padding-bottom: 21px;
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav-list {
+    gap: 36px;
+}
+
+.header__nav-btn {
+    gap: 40px;
+    align-items: center;
+}
+
+.header__nav-list li a:hover {
+    border-bottom: 2px #323232 solid;
+}
+
+
+.header__nav ul li a {
+    color: #000000;
+    border-bottom: 2px #32323200 solid;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.header__nav ul li a:hover {
+    color: #000000;
+}
+
+.header__main {
+    margin: 40px 0;
+}
+
+.header__main .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.header__main-card {
+    display: flex;
+    align-items: center;
+    padding: 73px;
+    background: #E1E1E1;
+    border-radius: 10px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 6px 6px 15px 0 rgba(132, 132, 132, 0.3);
+}
+
+.header__main-card:hover {
+    background: #323232;
+    color: white;
+}
+
+.header__main-card:hover .mark{
+    background: #ffffff;
+    color: #323232;
+}
+
+.header__main-card img {
+    margin: 0 30px;
+}
+
+.mark {
+    top: 16px;
+    left: 22px;
+    font-size: 22px;
+    background: #323232;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 11px 39px;
+    position: absolute;
+}
+
+.card-text p:nth-of-type(1), .card-text h2{
+    margin-bottom: 20px;
+}
+
+.card-text {
+    line-height: 16.8px;
+}
+
+.header__main-card:nth-of-type(1) {
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.header__main-card:nth-of-type(2) {
+    grid-column: span 7;
+    grid-row: span 4;
+}
+
+.header__main-card:nth-of-type(2) h2 {
+    font-size: 22px;
+}
+
+.header__main-card:nth-of-type(3) {
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.card-text h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 2.2px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px #323232 solid;
+    padding-bottom: 21px;
+}
+
+.leaders .container .leaders__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leaders__card-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    position: relative;
+    padding: 72px 108px 39px;
+    background: #E1E1E1;
+    width: 416px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 6px 6px 15px 0 rgba(132, 132, 132, 0.3);
+}
+
+.leaders__card-item:hover {
+    color: #FFF;
+    background: #323232;
+}
+
+.leaders__card-item:hover .mark{
+    color: #323232;
+    background: #ffffff;
+}
+
+.leaders__card-item .card-text p:nth-child(1) {
+    margin-top: 20px;
+}
+
+.card__mark {
+    background: #FFF;
+    padding: 16px 15px;
+    margin: 0;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__mark:nth-of-type(2) {
+    top: 90px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #323232;
+    margin: 60px 0;
+}
+
+.frst {
+    background: url(../images/1newsBg.png) center / cover;
+}
+
+.scnd {
+    background: url(../images/2newsBg.png) center / cover;
+}
+
+.news__card {
+    width: 636px;
+    height: 470px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.news__cards {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.news-text {
+    width: 466px;
+}
+
+.news-time {
+    display: flex;
+    width: 466px;
+    gap: 10px;
+}
+
+.news__card h2 {
+    margin: 40px 0;
+    display: flex;
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.news__card p {
+    display: flex;
+    color: #E1E1E1;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.news-time p{
+    font-size: 16px;
+    display: flex;
+    color: #FFF;
+}
+
+.news__mark {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    background: #fff;
+    padding: 13px 29px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footer {
+    background: #323232;
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+}
+
+.footer a, .footer span {
+    color: #FFF;
+}
+
+.footer h3 {
+    color: #FFF;
+    letter-spacing: 2.2px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer h2 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacts h3 {
+    margin: 0;
+}
+
+.contacts__social a{
+    margin-right: 26px;
+}
+
+.contacts__social h3 {
+    margin: 20px 0;
+}
+
+.burger-menu {
+    display: none;
+    visibility: hidden;
+}
+
+.header__nav-btn li{
+    height: max-content;
+}
+
+.logotype {
+    order: 1;
+}
+
+.burger-menu {
+    order: 2;
+}
+
+.header__nav-list {
+    order: 3;
+}
+
+.header__nav-btn {
+    order: 4;
+}
+
+.footer .container {
+    padding: 0 20px;;
+}
