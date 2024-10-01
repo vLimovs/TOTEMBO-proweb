@@ -35,15 +35,15 @@
     .logotype {
         order: 1;
     }
-    
+
     .burger-menu {
         order: 4;
     }
-    
+
     .header__nav-list {
         order: 3;
     }
-    
+
     .header__nav-btn {
         order: 2;
     }
@@ -74,15 +74,21 @@
     }
 }
 
-
-
-/* //////// */
-@media (max-width: 546px) {
-    body * {
+@media (max-width: 790px) {
+    .footer {
         display: none;
     }
 
-    .screen-warning {
-        display: block;
+    .header__nav-btn {
+        gap: 15px;
+    }
+
+    .logotype {
+        object-fit: fill;
+        max-width: 169px;
+        max-height: 24px;
+    }
+    .rubtn {
+        display: none;
     }
 }

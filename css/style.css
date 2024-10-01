@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -26,7 +27,14 @@ html {
     z-index: 1000;
 }
 
-span, img, h1, h2, h3, p, li, a {
+span,
+img,
+h1,
+h2,
+h3,
+p,
+li,
+a {
     overflow: hidden;
 }
 
@@ -106,7 +114,7 @@ span, img, h1, h2, h3, p, li, a {
     color: white;
 }
 
-.header__main-card:hover .mark{
+.header__main-card:hover .mark {
     background: #ffffff;
     color: #323232;
 }
@@ -126,7 +134,8 @@ span, img, h1, h2, h3, p, li, a {
     position: absolute;
 }
 
-.card-text p:nth-of-type(1), .card-text h2{
+.card-text p:nth-of-type(1),
+.card-text h2 {
     margin-bottom: 20px;
 }
 
@@ -168,7 +177,7 @@ span, img, h1, h2, h3, p, li, a {
     padding-bottom: 21px;
 }
 
-.leaders .container .leaders__card{
+.leaders .container .leaders__card {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -196,7 +205,7 @@ span, img, h1, h2, h3, p, li, a {
     background: #323232;
 }
 
-.leaders__card-item:hover .mark{
+.leaders__card-item:hover .mark {
     color: #323232;
     background: #ffffff;
 }
@@ -287,7 +296,7 @@ span, img, h1, h2, h3, p, li, a {
 }
 
 
-.news-time p{
+.news-time p {
     font-size: 16px;
     display: flex;
     color: #FFF;
@@ -312,10 +321,12 @@ span, img, h1, h2, h3, p, li, a {
 .footer .container {
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 50px 20px;
+    ;
 }
 
-.footer a, .footer span {
+.footer a,
+.footer span {
     color: #FFF;
 }
 
@@ -326,6 +337,7 @@ span, img, h1, h2, h3, p, li, a {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 40px;
+    align-items: center;
 }
 
 .footer h2 {
@@ -352,7 +364,7 @@ span, img, h1, h2, h3, p, li, a {
     margin: 0;
 }
 
-.contacts__social a{
+.contacts__social a {
     margin-right: 26px;
 }
 
@@ -365,7 +377,7 @@ span, img, h1, h2, h3, p, li, a {
     visibility: hidden;
 }
 
-.header__nav-btn li{
+.header__nav-btn li {
     height: max-content;
 }
 
@@ -385,6 +397,6 @@ span, img, h1, h2, h3, p, li, a {
     order: 4;
 }
 
-.footer .container {
-    padding: 0 20px;;
+.footer li {
+    width: max-content;
 }
